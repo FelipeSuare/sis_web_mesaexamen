@@ -1,0 +1,26 @@
+{%extends "docentes/base.html"%}
+{% block title %}Panel del Docente{% endblock %}
+{% block navbar %}
+    {% include "docentes/nav.html" %}
+{% endblock %}
+
+{% block content%}
+    <div class="mt-4">
+        <h3>OPCIONES DE DOCENTES</h3>
+        <ul class="list-group">
+            </li>
+            <li class="list-group-item">
+                <a href="#">Consultar Cronograma</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">Consultar Lista de estudiantes</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">Consultar Calendario</a>
+            </li>
+        </ul>
+    </div>
+{% endblock %}
+{% block footer %}
+    <p>&copy; 2025 Sistema Mesa de Examen</p>
+{% endblock footer %}
