@@ -3,20 +3,21 @@
 {% block title %}Login{% endblock %}
 
 {% block content %}
-    <h1>Login</h1>
+    <h1>Iniciar Sesión</h1>
     <form action="/login" method="post">
         <div class="form-group">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
+            <label for="ru">RU:</label>
+            <input type="text" id="ru" name="ru" required>
         </div>
         <div class="form-group">
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
+            <label for="ci">Contraseña:</label>
+            <input type="password" id="ci" name="ci" required>
+            <input type="checkbox" id="show-password" onclick="togglePassword()">
         </div>
-        <button type="submit">Login</button>
+        <button type="submit">Iniciar</button>
     </form>
-    <p>Don't have an account? <a href="#">Register here</a></p>
-    <p>Don't have an account? <a href="#">Sistema de Usuario</a></p>   
+    <p>¿No estas registrado? <a href={% url "registro" %}>Regístrate aquí</a></p>
+    <p>Don't have an account? <a href="#">Sistema de Usuario</a></p>
 {% endblock %}
 {% block footer %}
     <p>&copy; 2025 Your project name Sistema Mesa Examen</p>

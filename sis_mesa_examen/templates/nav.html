@@ -1,8 +1,11 @@
 <nav>
     <ul>
         <li><a href="{% url "home" %}">Home</a></li>
-        <li><a href="{% url "about" %}">About</a></li>
+        {# <li><a href="{% url 'about' %}">About</a></li> #}
         <li><a href="{% url "login" %}">Login</a></li>
-        <li><a href="{% url "contact" %}">Contact</a></li>
+        {#<li><a href="{% url "contact" %}">Contact</a></li>#}
+        {#<li><a href="{% url "registro" %}">Registro de Estudiante</a></li>#}
+        <li><a href="{% url "estudiantes:index" %}"> Estudiante</a></li>
+        <li><a href="{% url "docentes:index" %}">docentes</a></li>
     </ul>
 </nav>

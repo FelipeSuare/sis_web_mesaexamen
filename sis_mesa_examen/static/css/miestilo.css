@@ -146,3 +146,15 @@ footer {
         font-size: 22px;
     }
 }
+/* Estilo para el checkbox dentro del campo de contraseña */
+.form-group {
+    position: relative;
+}
+
+#show-password {
+    position: absolute;
+    top: 50%;
+    right: -170px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
