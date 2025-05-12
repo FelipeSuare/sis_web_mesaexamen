@@ -1,0 +1,160 @@
+/* Estilos Globales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1a1a2e, #16213e); /* Gradiente azul oscuro */
+    color: #f0f0f0; /* Texto en gris claro */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Contenedor Principal */
+.container {
+    max-width: 1100px;
+    width: 90%;
+    padding: 25px;
+    background: #0f3460; /* Azul profundo */
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    color: #f0f0f0;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #e94560; 
+    margin-bottom: 12px;
+}
+
+/* Enlaces */
+a {
+    color: #00aaff; /* Azul eléctrico */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0088cc; /* Azul más oscuro al pasar el mouse */
+}
+
+/* Botones */
+button {
+    background: #e94560; /* Rojo de acento */
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #d63050; /* Rojo más oscuro al pasar el mouse */
+}
+
+/* Campos de Entrada */
+input, textarea {
+    background: #16213e;
+    color: #f0f0f0;
+    border: 2px solid #e94560;
+    padding: 12px;
+    border-radius: 8px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+input:focus, textarea:focus {
+    border-color: #00aaff;
+    outline: none;
+}
+
+/* Estilos del Encabezado */
+header {
+    width: 100%;
+    background: linear-gradient(90deg, #e94560, #0f3460);
+    color: #fff;
+    padding: 15px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos para la lista de navegación */
+nav ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Hace que los elementos sean horizontales */
+    justify-content: center; /* Centra los elementos */
+    gap: 25px; /* Espaciado entre elementos */
+}
+
+/* Estilos para los elementos de la lista */
+nav ul li {
+    display: inline; /* Asegura que sean elementos en línea */
+}
+
+/* Estilos para los enlaces de navegación */
+nav ul li a {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    text-decoration: none; /* Elimina subrayado */
+    display: block; /* Hace que el enlace ocupe todo el espacio del padding */
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #00aaff;
+    transform: scale(1.1);
+}
+
+
+/* Pie de Página */
+footer {
+    width: 100%;
+    background: #0f3460;
+    padding: 15px 0;
+    color: #f0f0f0;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 30px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Diseño Responsivo */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header .logo {
+        font-size: 22px;
+    }
+}
+/* Estilo para el checkbox dentro del campo de contraseña */
+.form-group {
+    position: relative;
+}
+
+#show-password {
+    position: absolute;
+    top: 50%;
+    right: -170px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}

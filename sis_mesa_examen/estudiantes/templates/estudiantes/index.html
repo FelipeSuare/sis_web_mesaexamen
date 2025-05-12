@@ -1,0 +1,47 @@
+{% extends "estudiantes/base.html" %}
+
+{% block title %}Panel del Estudiante{% endblock %}
+
+{% block navbar %}
+    {% include "estudiantes/nav.html" %}
+{% endblock %} 
+
+{% block content%}
+    <div class="container mt-5">
+        <h1 class="text-center">Bienvenido, {{ estudiante.nombre }}</h1>
+        
+        <div class="card mt-4">
+            <div class="card-header">
+                <h3>Tus datos</h3>
+            </div>
+            <div class="card-body">
+                <p><strong>Nombre:</strong> {{ estudiante.nombre }}</p>
+                <p><strong>Email:</strong> {{ estudiante.email }}</p>
+                <p><strong>Matrícula:</strong> {{ estudiante.matricula }}</p>
+            </div>
+        </div>
+
+        <div class="mt-4">
+            <h3>Opciones de Estudiante</h3>
+            <ul class="list-group">
+                </li>
+                <li class="list-group-item">
+                    <a href="#">Solicitud de examen</a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#">Consultar Solicitud</a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#">Consultar Calendario</a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#">Consultar notas</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+{% endblock%}
+
+{% block footer %}
+    <p>&copy; 2023 Panel del Estudiante. Todos los derechos reservados.</p>
+{% endblock footer %}
